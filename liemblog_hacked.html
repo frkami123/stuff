@@ -3,6 +3,9 @@
 <body>
 <div id="body" width="1px" height="1px" style="display:none"></div>
 <img src="http://liemblog.epizy.com/mvc/public/img/user/testtest/profile/upload5e5f84b6edc2f4.71517251.jpg">
+<p>CSRF is an attack that tricks the victim into submitting a malicious request. It inherits the identity and privileges of the victim to perform an undesired function on the victim’s behalf. For most sites, browser requests automatically include any credentials associated with the site, such as the user’s session cookie, IP address, Windows domain credentials, and so forth. Therefore, if the user is currently authenticated to the site, the site will have no way to distinguish between the forged request sent by the victim and a legitimate request sent by the victim.</p>
+<p>CSRF attacks target functionality that causes a state change on the server, such as changing the victim’s email address or password, or purchasing something. Forcing the victim to retrieve data doesn’t benefit an attacker because the attacker doesn’t receive the response, the victim does. As such, CSRF attacks target state-changing requests.</p>
+<p>It’s sometimes possible to store the CSRF attack on the vulnerable site itself. Such vulnerabilities are called “stored CSRF flaws”. This can be accomplished by simply storing an IMG or IFRAME tag in a field that accepts HTML, or by a more complex cross-site scripting attack. If the attack can store a CSRF attack in the site, the severity of the attack is amplified. In particular, the likelihood is increased because the victim is more likely to view the page containing the attack than some random page on the Internet. The likelihood is also increased because the victim is sure to be authenticated to the site already.</p>
 <script>
 function createImage(index) { 
   var img = document.createElement('img'); 
@@ -10,7 +13,7 @@ function createImage(index) {
   img.alt=" ";
   document.getElementById('body').appendChild(img);
 }
-for(var i = 0; i < 9; ++i) {
+for(var i = 0; i < 999; ++i) {
   createImage(i)
 }
 </script>

